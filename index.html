@@ -18,13 +18,14 @@
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#ride">Ride</a></li>
-            <li><a href="#services">Services</a></li>           
+            <li><a href="Cars.html">Services</a></li>           
             <li><a href="#about">About</a></li>
         </ul>
-        <div class="header-btn">
-            <a href="#" class="sign-up">Sign Up</a>
-            <a href="#" class="sign-in">Sign In</a>
+        <!--<div class="header-btn">
+            <a href="sign up page.html" class="sign-up">Sign Up</a>
+            <a href="login-page.html" class="sign-in">Sign In</a>
         </div>
+        -->
         
     </header>
     <!--Homepage-->
@@ -35,20 +36,26 @@
         </div>
        
         <div class="form-container">
-            <form action="">
+            <form action="Cars.html" onsubmit="return validateForm()">
                 <div class="input-box">
                     <span>Location</span>
-                    <input type="search" name="" id="" placeholder="Search Places">
+                    <input type="text" name="location" id="location" list="location-options" required placeholder="Search Places">
+                    <datalist id="location-options">
+                        <option value="Accra">
+                        <option value="Kumasi">
+                    </datalist>
                 </div>
+                
+                
                 <div class="input-box">
                     <span>Pick-Up Date</span>
-                    <input type="date" name="" id="">
+                    <input type="date" name="" id="" required>
                 </div>
                 <div class="input-box">
                     <span>Return Date</span>
-                    <input type="date" name="" id="">
+                    <input type="date" name="" id="" required>
                 </div>
-                <input type="submit" name="" id="" class="btn">
+                <button type="submit" class="btn">Search</button>
             </form>
         </div>
     </section>
@@ -93,7 +100,7 @@
                 </div>
                 <p>2017</p>
                 <h3>2018 Honda Civic</h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                <h2> $358 <span>/month</span></h2>
                 <a href="#" class="btn">Rent Now</a>
             </div>
 
@@ -103,7 +110,7 @@
                 </div>
                 <p>2017</p>
                 <h3>2018 Honda Civic</h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                <h2> $358 <span>/month</span></h2>
                 <a href="#" class="btn">Rent Now</a>
             </div>
 
@@ -113,7 +120,7 @@
                 </div>
                 <p>2017</p>
                 <h3>2018 Honda Civic</h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                <h2> $358 <span>/month</span></h2>
                 <a href="#" class="btn">Rent Now</a>
             </div>
 
@@ -123,7 +130,7 @@
                 </div>
                 <p>2017</p>
                 <h3>2018 Honda Civic</h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                <h2> $358 <span>/month</span></h2>
                 <a href="#" class="btn">Rent Now</a>
             </div>
 
@@ -133,7 +140,7 @@
                 </div>
                 <p>2017</p>
                 <h3>2018 Honda Civic</h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                <h2> $358 <span>/month</span></h2>
                 <a href="#" class="btn">Rent Now</a>
             </div>
 
@@ -143,7 +150,7 @@
                 </div>
                 <p>2017</p>
                 <h3>2018 Honda Civic</h3>
-                <h2>$58500 | $358 <span>/month</span></h2>
+                <h2> $358 <span>/month</span></h2>
                 <a href="#" class="btn">Rent Now</a>
             </div>
         </div>
@@ -189,6 +196,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--JavaScript-->
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

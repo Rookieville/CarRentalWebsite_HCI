@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rent a Car</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group textarea {
+      height: 100px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .success-message {
+      margin-top: 20px;
+      background-color: #dff0d8;
+      color: #3c763d;
+      padding: 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rent a Car</h1>
+    <form>
+      <div class="form-group">
+        <label for="rent_date">Renting Date:</label>
+        <input type="date" id="rent_date" required>
+      </div>
+      <div class="form-group">
+        <label for="return_date">Return Date:</label>
+        <input type="date" id="return_date" required>
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="information">Additional Information:</label>
+        <textarea id="information"></textarea>
+      </div>
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+    <div id="success-message" class="success-message" style="display: none;">
+      Car Booked!
+    </div>
+  </div>
+
+  <script>
+    // Simulating car availability
+    var carAvailable = true;
+
+    // Function to change car availability
+    function changeCarAvailability() {
+      carAvailable = false;
+    }
+
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get form values
+      var rentDate = document.getElementById('rent_date').value;
+      var returnDate = document.getElementById('return_date').value;
+      var city = document.getElementById('city').value;
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var information = document.getElementById('information').value;
+
+      // Perform form validation if needed
+
+      // Process form data
+      // You can send the data to a server using AJAX or save it to local storage
+
+      // Change car availability
+      changeCarAvailability();
+
+      // Display success message
+      var successMessage = document.getElementById('success-message');
+      successMessage.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

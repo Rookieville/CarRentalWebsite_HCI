@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color:#003366;
+    --second-color:#CCCCCC;
+    --text-color: #444;
+    --hover-color: #c3a55f;
+    --gradient: linear-gradient(#003366,#CCCCCC);
+}
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+section{
+    padding: 50px 100px;
+    margin-top: 50px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 100px;
+    
+}
+.logo img {
+    width: 40px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.header-btn a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.header-btn .sign-in{
+    background: var(--main-color);
+    color:  #fff;
+    border-radius: 0.5rem;
+}
+.header-btn .sign-in:hover {
+    background: var(--hover-color);
+}
+.cars{
+  width: 100;
+  min-height: 100vh;
+  position: relative;
+  background-position: center right;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+
+}
+.car-block {  
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    height: 200px;
+  }
+  
+  .car-image {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .car-details {
+    flex-grow: 1;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p.description {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .availability {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .indicator {
+    padding: 5px 10px;  
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  
+  .available {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .unavailable {
+    background-color: #FF0000;
+    color: white;
+  }
+  
+  .rent-button {
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rent-button:hover {
+    background-color: var(--hover-color)
+  }
+  
