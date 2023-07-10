@@ -1,114 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Rent a Car</title>
-  <style>
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .form-group {
-      margin-bottom: 15px;
-    }
-    .form-group label {
-      display: block;
-      font-weight: bold;
-    }
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .form-group textarea {
-      height: 100px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-    .success-message {
-      margin-top: 20px;
-      background-color: #dff0d8;
-      color: #3c763d;
-      padding: 10px;
-      border-radius: 4px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Rent a Car</h1>
-    <form>
-      <div class="form-group">
-        <label for="rent_date">Renting Date:</label>
-        <input type="date" id="rent_date" required>
-      </div>
-      <div class="form-group">
-        <label for="return_date">Return Date:</label>
-        <input type="date" id="return_date" required>
-      </div>
-      <div class="form-group">
-        <label for="city">City:</label>
-        <input type="text" id="city" required>
-      </div>
-      <div class="form-group">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-      </div>
-      <div class="form-group">
-        <label for="information">Additional Information:</label>
-        <textarea id="information"></textarea>
-      </div>
-      <button type="submit" class="btn">Book Now</button>
-    </form>
-    <div id="success-message" class="success-message" style="display: none;">
-      Car Booked!
-    </div>
-  </div>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Sign Up </title>
 
-  <script>
-    // Simulating car availability
-    var carAvailable = true;
+        <!-- CSS -->
+        <link rel="stylesheet" href="book-style.css">
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                        
+    </head>
+    <body>
 
-    // Function to change car availability
-    function changeCarAvailability() {
-      carAvailable = false;
-    }
+        <!--Header-->
+        <header>
+          <a href="#" class="logo"><img src="images/jeep.png" alt=""></a>
 
-    document.querySelector('form').addEventListener('submit', function(event) {
-      event.preventDefault();
+          <div class = "bx bx-menu" id="menu-icon"></div>
 
-      // Get form values
-      var rentDate = document.getElementById('rent_date').value;
-      var returnDate = document.getElementById('return_date').value;
-      var city = document.getElementById('city').value;
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var information = document.getElementById('information').value;
+          <ul class="navbar">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#ride">Ride</a></li>
+              <li><a href="Cars.html">Services</a></li>           
+              <li><a href="#about">About</a></li>
+          </ul>
+          <!--<div class="header-btn">
+              <a href="sign up page.html" class="sign-up">Sign Up</a>
+              <a href="login-page.html" class="sign-in">Sign In</a>
+          </div>
+          -->
+          
+        </header>
 
-      // Perform form validation if needed
 
-      // Process form data
-      // You can send the data to a server using AJAX or save it to local storage
+        <section class="container forms">
+            <!-- Signup Form -->
 
-      // Change car availability
-      changeCarAvailability();
+            <section class="container forms">
+                <div class="form login">
+                    <div class="form-content">
+                        <h1> Rent Now</h1>
+                        <form action="#" onsubmit="return validateForm()">
+                            <div class="field input-field">
+                                <input type="text" placeholder="Name" class="input" required>
+                            </div>
 
-      // Display success message
-      var successMessage = document.getElementById('success-message');
-      successMessage.style.display = 'block';
-    });
-  </script>
-</body>
+                            <div class="field input-field">
+                              <input type="email" placeholder="Email" class="input" required>
+                            </div>
+
+                            <div class="field input-field">
+                              <select class="input" required>
+                                <option value="" disabled selected>Pick-Up Location</option>
+                                <option value="option1">Hilla Liman Hall:Legon</option>
+                                <option value="option2">Palace:Tema Community 25</option>
+                                <option value="option3">UPSA Hostels:Madina</option>
+                                <option value="option3">GIMPA: Tema</option>
+                              </select>
+                            </div>
+                            
+    
+                            <div class="field input-field">
+                              
+                              <input type="date" class="input" required>
+                            </div>
+
+                            <div class="field input-field">
+                              
+                              <input type="date" class="input" required>
+                            </div>
+    
+                            <div class="field button-field">
+                                <button>Book</button>
+                            </div>
+                        </form>
+                    </div>
+    
+                    
+                </div>
+
+        <!-- JavaScript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
