@@ -23,10 +23,10 @@
           <div class = "bx bx-menu" id="menu-icon"></div>
 
           <ul class="navbar">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#ride">Ride</a></li>
-              <li><a href="Cars.html">Services</a></li>           
-              <li><a href="#about">About</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#ride">Ride</a></li>
+              <li><a href="index.html#services">Services</a></li>           
+              <li><a href="index.html#about">About</a></li>
           </ul>
           <!--<div class="header-btn">
               <a href="sign up page.html" class="sign-up">Sign Up</a>
@@ -36,53 +36,72 @@
           
         </header>
 
-
         <section class="container forms">
-            <!-- Signup Form -->
+          <div class="form login">
+              <div class="form-content">
+                  <h1> Rent Now</h1>
+                  <form action="#" onsubmit="return validateForm()">
+                      <div class="field input-field">
+                          <input type="text" placeholder="Name" class="input" required>
+                      </div>
 
-            <section class="container forms">
-                <div class="form login">
-                    <div class="form-content">
-                        <h1> Rent Now</h1>
-                        <form action="#" onsubmit="return validateForm()">
-                            <div class="field input-field">
-                                <input type="text" placeholder="Name" class="input" required>
-                            </div>
+                      <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" required>
+                      </div>
 
-                            <div class="field input-field">
-                              <input type="email" placeholder="Email" class="input" required>
-                            </div>
+                      <div class="field input-field">
+                        <select class="input" required>
+                          <option value="" disabled selected>Pick-Up Location</option>
+                          <option value="option1">Hilla Liman Hall:Legon</option>
+                          <option value="option2">Palace:Tema Community 25</option>
+                          <option value="option3">UPSA Hostels:Madina</option>
+                          <option value="option3">GIMPA: Tema</option>
+                        </select>
+                      </div>
+                      
 
-                            <div class="field input-field">
-                              <select class="input" required>
-                                <option value="" disabled selected>Pick-Up Location</option>
-                                <option value="option1">Hilla Liman Hall:Legon</option>
-                                <option value="option2">Palace:Tema Community 25</option>
-                                <option value="option3">UPSA Hostels:Madina</option>
-                                <option value="option3">GIMPA: Tema</option>
-                              </select>
-                            </div>
-                            
-    
-                            <div class="field input-field">
-                              
-                              <input type="date" class="input" required>
-                            </div>
+                      <div class="field input-field">
+                        <label for="dateInput">Pick Up Date</label>
+                        <input type="date" class="input" required>
+                      </div>
 
-                            <div class="field input-field">
-                              
-                              <input type="date" class="input" required>
-                            </div>
-    
-                            <div class="field button-field">
-                                <button>Book</button>
-                            </div>
-                        </form>
-                    </div>
-    
-                    
-                </div>
+                      <div class="field input-field" >
+                        <label for="dateInput">Return Date</label>
+                        <input type="date" class="input" required>
+                      </div>
 
+                      <div class="field button-field">
+                          <button>Book</button>
+                      </div>
+                  </form>
+              </div>
+
+              
+          </div>
+
+          <div class="car-info-container">
+            <div class="title">2020 Toyota Corolla Hybrid</div>
+        
+            <div class="info">
+              <ul>
+                <li>750/day</li>
+                <li>5 passengers</li>
+                <li>Air conditioning</li>
+                <li>Smart Key System</li>
+                <li>Automatic Transmission</li>
+              </ul>
+            </div>
+            
+        
+            <img class="long-image" src="images/corolla-long.jpg" />
+        
+            <img class="left-image" src="images/corolla-left.jpg" />
+        
+            <img class="right-image" src="images/corolla-right.jpg" />
+          </div>
+
+          
+        </section>
         <!-- JavaScript -->
         <script src="js/main.js"></script>
     </body>
