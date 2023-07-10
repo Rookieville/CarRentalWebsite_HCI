@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Form</title>
+  <link rel="stylesheet" href="test-style.css">
+</head>
+<body>
+  <div class="container">
+    <form class="form">
+      <h2>Car Rental Form</h2>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="field">
+        <label for="pickup-location">Pick-Up Location</label>
+        <select id="pickup-location" required>
+          <option value="" disabled selected>Select a location</option>
+          <option value="location1">Location 1</option>
+          <option value="location2">Location 2</option>
+          <option value="location3">Location 3</option>
+          <option value="location4">Location 4</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="pickup-date">Pick-Up Date</label>
+        <input type="date" id="pickup-date" required>
+      </div>
+      <div class="field">
+        <label for="return-date">Return Date</label>
+        <input type="date" id="return-date" required>
+      </div>
+      <button type="submit">Book</button>
+    </form>
+    <div class="car-info">
+      <img src="car-image.jpg" alt="Car Image">
+      <div class="info">
+        <h3>Car Name</h3>
+        <p>Price: $XXX/day</p>
+        <p>Color: Red</p>
+        <p>Year: 2023</p>
+        <!-- Add more car information here -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
