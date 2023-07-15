@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 :root{
     --main-color:#003366;
@@ -289,6 +293,15 @@ form{
     left: 360px;
     top: 190px;
     object-fit: contain;
+}
+.full {
+    width: 460px;
+    height: 300px;
+    position: absolute;
+    left: 140px;
+    right: 140px;
+    top: 20px;
+    object-fit: cover;
 }
   
 

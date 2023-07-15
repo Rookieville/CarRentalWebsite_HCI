@@ -115,6 +115,24 @@ header{
 .text p{
     margin: 00.5rem 0 1rem;
 }
+.rent-btn {
+    position: relative;
+    top: -150px; /* Adjust the top value to move the button up */
+}
+.rent-btn a{
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 24px 60px 24px 60px;  
+    top: 200px;  
+}
+.rent-btn .rent-now {
+    background: #eeeff1;
+    color: var(--main-color);
+    border-radius: 15px;
+    font: 600 22px "Poppins", sans-serif;
+    top: 200px;
+}
+
 .form-container form{
     display: flex;
     flex-wrap: wrap;
@@ -248,13 +266,16 @@ header{
 .services-container .box .btn:hover {
     background: var(--hover-color);
 }
+.about {
+    margin-top: 5rem;
+}
+  
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 .about-img img {
     width: 100%;
@@ -263,6 +284,7 @@ header{
     font-weight: 500;
     color: var(--main-color);
     text-transform: uppercase;
+   
 }
 .about-text p{
     margin: 0.5rem 0 1.4rem;
